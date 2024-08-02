@@ -11,4 +11,4 @@ This Hacking Lab will consist of the following components:
 
 Before starting, we must download and set up a virtual box. This is very straightforward, so I will not provide a step-by-step guide. If you need assistance, simply watch a short tutorial on YouTube on how to do so. Just make sure that it is from Oracle and adjust whatever you need to to meet your computer's standards.
 
-Once the Virtual Box is set up, we can now download and create our Kali Linux VM. To do this, simply download the zip folder linked below and extract the files.
+Once the Virtual Box is set up, we can now download and create our Kali Linux VM.
