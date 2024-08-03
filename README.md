@@ -58,7 +58,13 @@ Next, I will ping the FTP server VM to make sure the Kali VM is able to communic
 
 ![chrome_k8ttPAT8M7](https://github.com/user-attachments/assets/965c4361-4df1-4f33-b0eb-380a3e1bd6c0)
 
-The ping was successful so now I will go to the FTP client VM and go to FileZilla. 
+The ping was successful so now I will go to the FTP client VM and go to FileZilla. Click file and then site manager. In site manager, I willnow change the IP Address to 192.168.15.12, which is the IP of the Server VM. Once that is done, I will hit connect.
+
+![chrome_aZkeiXFSw9](https://github.com/user-attachments/assets/872a059c-5b63-4629-a621-f0b117628dac)
+
+![chrome_NqxAvyQB5f](https://github.com/user-attachments/assets/76885414-7bab-420f-8c30-268a3d3b25fc)
+
+The purpose of this was to verify that communication has been successfully established between the CLient and Server VM. 
 
 
 
