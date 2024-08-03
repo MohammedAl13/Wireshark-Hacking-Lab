@@ -64,7 +64,20 @@ The ping was successful so now I will go to the FTP client VM and go to FileZill
 
 ![chrome_NqxAvyQB5f](https://github.com/user-attachments/assets/76885414-7bab-420f-8c30-268a3d3b25fc)
 
-The purpose of this was to verify that communication has been successfully established between the CLient and Server VM. 
+The purpose of this was to verify that communication has been successfully established between the CLient and Server VM. Now that everything is setup, I can now start the hacking portion of this lab.
+
+First, I will enable promiscuos mode within the Kali VM by going into Settings-->Network-->Advanced
+
+![chrome_U9qNKKK7ze](https://github.com/user-attachments/assets/3ff95cd7-032f-4150-ac9e-45dacb222107)
+
+Enabling promiscuos mode is necessary because of its ability to access all network traffic on a segment. In this case, all the network packets communicated between the VM's on this network.
+
+Now we can start capturing all the packets traveling though the network using Wireshark. In the Kali VM, click applications--> Sniffing and Spoofing--> Wireshark. 
+
+![chrome_Osw9OYrt7e](https://github.com/user-attachments/assets/4626f2af-afa4-4388-a5e5-bf5e358065c5)
+
+
+
 
 
 
