@@ -15,4 +15,18 @@ Once the Virtual Box is set up, we can download and create our Kali Linux VM.
 
 Head on over to Virtualbox and at the top, select file, and select import new appliance. Select the Kali Linux ova file and adjust the CPU and RAM as per your need. I did not adjust the setting and went with 2 cpu's and 2048 MB of RAM. Once this is complete, click import.
 
+Under the description tab, there is the Login information to the Kali VM.
+
+![chrome_rjlL78DNXE](https://github.com/user-attachments/assets/195ab416-d147-46c0-89fb-f738237e61b2)
+
+The next step is to download and import the 2 pre-built FTP VM's into Virtualbox. Unfortunatly, I was unable to link those files into this project.
+
+After I downlaoded the 2 FTP VM's, I then went into the network settings of both to enable Network Adapter and change the network to Host-only Adapter
+
+![chrome_9cYzObhFDt](https://github.com/user-attachments/assets/54901978-5241-476b-aa15-b1f3d6f17ab3)
+
+![chrome_MY13viedJl](https://github.com/user-attachments/assets/bcf66f4b-17fd-495b-8091-9f398c9d7df1)
+
+A very important note, for the lab to work, all three VM's must be on the same exact network. For me, I made sure both FTP VM's were on the VirtualBox Host-Only Ethernet Adapter #3 which is the one my original Kali VM is on.
+
 
