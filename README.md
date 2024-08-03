@@ -7,8 +7,12 @@ This Hacking Lab will consist of the following components:
 - Kali Linux VM
 - 2 ftp pre-built VMs
 
-***This home lab can be done for free. All Necessary files will be linked directly to this project.***
+***This home lab can be done for free. Unfortunatley, the files needed for this project are too large to link into this project and I have tried other methods of importing the files but methods have unfortunately failed. This lab will just be a walkthrough of what I did.***
 
-Before starting, we must download and set up a virtual box. This is very straightforward, so I will not provide a step-by-step guide. If you need assistance, simply watch a short tutorial on YouTube on how to do so. Just make sure that it is from Oracle and adjust whatever you need to to meet your computer's standards.
+Before starting, we must download and set up a virtual box. This is very straightforward, so I will not provide a step-by-step guide. If you need assistance, simply watch a short tutorial on YouTube on how to do so. Just ensure it is from Oracle and adjust whatever you need to to meet your computer's standards.
 
-Once the Virtual Box is set up, we can now download and create our Kali Linux VM.
+Once the Virtual Box is set up, we can download and create our Kali Linux VM.
+
+Head on over to Virtualbox and at the top, select file, and select import new appliance. Select the Kali Linux ova file and adjust the CPU and RAM as per your need. I did not adjust the setting and went with 2 cpu's and 2048 MB of RAM. Once this is complete, click import.
+
+
