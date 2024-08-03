@@ -27,6 +27,67 @@ After I downlaoded the 2 FTP VM's, I then went into the network settings of both
 
 ![chrome_MY13viedJl](https://github.com/user-attachments/assets/bcf66f4b-17fd-495b-8091-9f398c9d7df1)
 
-A very important note, for the lab to work, all three VM's must be on the same exact network. For me, I made sure both FTP VM's were on the VirtualBox Host-Only Ethernet Adapter #3 which is the one my original Kali VM is on.
+A very important note, for the lab to work, all three VM's must be on the same exact network. For me, I made sure both FTP VM's were on the VirtualBox Host-Only Ethernet Adapter #3 which is the one my original Kali VM is on. 
+
+After starting both FTP VM's, I went to the FTP server VM first and went into Command Prompt and typed, ipconfig /renew. I am doing this just to make sure everything is clear and good to go with the IP Address. 
+
+![chrome_AfZBFPv4Z9](https://github.com/user-attachments/assets/c50be41f-7205-4491-bc1c-736c441b3a66)
+
+I will now do the same action with the FTP client VM.
+
+![chrome_cbpzzbDpcn](https://github.com/user-attachments/assets/c566acaf-0693-407a-99ba-9e7cbc4600d8)
+
+
+Important note, the client VM can ping the server, but the server VM cannot ping the client. The reason is that the ICMP firewall is not open on the CLient, only on the Server. 
+
+The Ip Address on the FTP Client VM was 192.168.15.11 and for the Server VM, it was 192.168.15.12. This is very important.
+
+Now lets ping the FTP server VM from the Client.
+
+![chrome_TsiGg37P22](https://github.com/user-attachments/assets/724c1db3-4f89-45a3-9e76-ecef3ccbfdf3)
+
+The ping was successful indicating the FTP VM's can communicate with each other. Now we need to make the Kali VM able to communicate as well.
+
+To do this, I will run the ifconfig command in terminal to make sure there is no IP Address conflict.
+
+![chrome_7SwY9vDI3Q](https://github.com/user-attachments/assets/7a1b065d-8350-4b2b-8151-bdf919e432ba)
+
+The IP Address assosiated with this VM is 192.168.15.10, indicating there is no IP conflict.
+
+Next, I will ping the FTP server VM to make sure the Kali VM is able to communicate.
+
+![chrome_k8ttPAT8M7](https://github.com/user-attachments/assets/965c4361-4df1-4f33-b0eb-380a3e1bd6c0)
+
+The ping was successful so now I will go to the FTP client VM and go to FileZilla. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
