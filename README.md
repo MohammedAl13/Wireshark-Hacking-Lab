@@ -7,21 +7,21 @@ This Hacking Lab will consist of the following components:
 - Kali Linux VM
 - 2 ftp pre-built VMs
 
-***This home lab can be done for free. Unfortunatley, the files needed for this project are too large to link into this project and I have tried other methods of importing the files but methods have unfortunately failed. This lab will just be a walkthrough of what I did.***
+***This home lab can be done for free. Unfortunately, the files needed for this project are too large to link to this project, and I have tried other methods of importing the files but have been unsuccessful. This lab will just be a walkthrough of what I did.***
 
 Before starting, we must download and set up a virtual box. This is very straightforward, so I will not provide a step-by-step guide. If you need assistance, simply watch a short tutorial on YouTube on how to do so. Just ensure it is from Oracle and adjust whatever you need to to meet your computer's standards.
 
 Once the Virtual Box is set up, we can download and create our Kali Linux VM.
 
-Head on over to Virtualbox and at the top, select file, and select import new appliance. Select the Kali Linux ova file and adjust the CPU and RAM as per your need. I did not adjust the setting and went with 2 cpu's and 2048 MB of RAM. Once this is complete, click import.
+Head on over to Virtualbox and at the top, select file, and select import new appliance. Select the Kali Linux ova file and adjust the CPU and RAM as needed. I did not adjust the settings, so I went with 2 CPUs and 2048 MB of RAM. Once this is complete, click import.
 
 Under the description tab, there is the Login information to the Kali VM.
 
 ![chrome_rjlL78DNXE](https://github.com/user-attachments/assets/195ab416-d147-46c0-89fb-f738237e61b2)
 
-The next step is to download and import the 2 pre-built FTP VM's into Virtualbox. Unfortunatly, I was unable to link those files into this project.
+The next step is downloading and importing the 2 pre-built FTP VM's into Virtualbox. Unfortunately, I was unable to link those files to this project.
 
-After I downlaoded the 2 FTP VM's, I then went into the network settings of both to enable Network Adapter and change the network to Host-only Adapter
+After I downloaded the 2 FTP VMs, I then went into the network settings of both to enable Network Adapter and change the network to Host-only Adapter
 
 ![chrome_9cYzObhFDt](https://github.com/user-attachments/assets/54901978-5241-476b-aa15-b1f3d6f17ab3)
 
@@ -64,7 +64,7 @@ The ping was successful so now I will go to the FTP client VM and go to FileZill
 
 ![chrome_NqxAvyQB5f](https://github.com/user-attachments/assets/76885414-7bab-420f-8c30-268a3d3b25fc)
 
-The purpose of this was to verify that communication has been successfully established between the CLient and Server VM. Now that everything is setup, I can now start the hacking portion of this lab.
+The purpose of this was to verify that communication has been successfully established between the client and Server VM. Now that everything is setup, I can now start the hacking portion of this lab.
 
 First, I will enable promiscuos mode within the Kali VM by going into Settings-->Network-->Advanced
 
