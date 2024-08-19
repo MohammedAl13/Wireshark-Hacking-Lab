@@ -108,6 +108,31 @@ To do so, make sure all VMs are running and go back into Wireshark and select et
 
 Once this is complete, we can now end the packet capture in Wireshark.
 
+Since there is a lot of noise, we will filter out the results by typing in the search "ftp of ftp-data". FTP will be the username and password we have already previously captured and ftp-data will be the actual file that was transfered.
+
+If we scroll, we will find some files that were downloaded. A file was downloaded that was named CreditCardinformation.txt.
+
+IMAGE
+
+If we click the FTP-data packet under the CreditCardInformation.txt we can see the data that was in the file but it is difficult to read. To make it more readable, we can select the FTP-data and go to File --> Export Pakcet Bytes  and select desktop and name it Credit Card Information.txt and hit save.
+
+We will do the same with the other 2 files.
+
+IMAGE
+
+IMAGE
+
+In the end, the Klai Linux VM desktop should look like this.
+
+IMAGE
+
+Now we can click each file and see all what was downloaded from the FTP server. 
+
+IMAGE 
+
+IMAGE
+
+IMAGE
 
 
 
