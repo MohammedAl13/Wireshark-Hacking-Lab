@@ -83,6 +83,7 @@ Now we can start capturing all the packets traveling though the network using Wi
 ![chrome_Osw9OYrt7e](https://github.com/user-attachments/assets/4626f2af-afa4-4388-a5e5-bf5e358065c5)
 
 
+Once we reach the Wireshark home screen, we are presented with a few options. eth0 and eth1. Ethernet 0, eth0, is a NAT adapter whereas ethernet 1, eth1, is a VirtualBox only adapter thata both our FTP server and client are using. So we will select eth1 to do the network capture.
 
 
 
