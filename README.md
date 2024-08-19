@@ -96,11 +96,11 @@ We will navigate to Filezilla on the FTP client and under Fiel --> Site Manager,
 
 After clicking connect, we can go to the FTP server and see that the connection was made successfully.
 
-IMAGE
+![image](https://github.com/user-attachments/assets/1d6b2faf-e2fc-4d69-8df7-6a682e245765)
 
 Now that the connection is made, we will stop the Wireshark capture in our Kali Linux VM. Since there is a lot of information, we will be filtering only for ftp data. If we scroll, we can find a packet stating the Username, password request, and the password in clear plaintext.
 
-IMAGE
+![image](https://github.com/user-attachments/assets/25d6ac66-2d6f-4c6c-8abc-e87d81a511a4)
 
 Now that we have successfully captured the Username and Password, we will now capture file contents downloaded over the network.
 
@@ -112,27 +112,27 @@ Since there is a lot of noise, we will filter out the results by typing in the s
 
 If we scroll, we will find some files that were downloaded. A file was downloaded that was named CreditCardinformation.txt.
 
-IMAGE
+![image](https://github.com/user-attachments/assets/8ae1cc49-0c85-4e1d-b9d4-e7f7ad39e9f5)
 
 If we click the FTP-data packet under the CreditCardInformation.txt we can see the data that was in the file but it is difficult to read. To make it more readable, we can select the FTP-data and go to File --> Export Pakcet Bytes  and select desktop and name it Credit Card Information.txt and hit save.
 
 We will do the same with the other 2 files.
 
-IMAGE
+![image](https://github.com/user-attachments/assets/2a885ef2-5ff3-4408-b24e-e8d890962a4a)
 
-IMAGE
+![image](https://github.com/user-attachments/assets/df40c573-a83b-4011-8c48-85b3a7b1c886)
 
 In the end, the Klai Linux VM desktop should look like this.
 
-IMAGE
+![image](https://github.com/user-attachments/assets/b54703ec-0acb-41b1-9b06-1b26ca4663c5)
 
 Now we can click each file and see all what was downloaded from the FTP server. 
 
-IMAGE 
+![image](https://github.com/user-attachments/assets/3a6e7ca2-57d9-4ba5-8f9f-707333f33235)
+ 
+![image](https://github.com/user-attachments/assets/a1c5f7f7-8f43-4978-9403-7589bc29534c)
 
-IMAGE
-
-IMAGE
+![image](https://github.com/user-attachments/assets/9a424cc4-e2fa-425a-ba72-b1d60f546772)
 
 If we head backover to the FTP client desktop, we can see how close each file was captured. For all 3 files, all data and information was 100% preserved. The format is the exact same. The reason why this is now a miniature hack is that nothing we did generated any logs, meaning there is no way to trace that we downloaded/captured any of those files and plaintext login information as they were intercepted in transit. Instead of stealing the information from the server itself, by intercepting in transit, we make it less traceable. This is very important as it holds many real world applications. Someone with ill-intent may find a way to connect there computer to a network and once they run wireshark, they can begin intercepting any passwords, files, packets sent and downloaded onver the network and remain almost invisible. For these reasons, it is important to educate ourselves in Network Security to prevent such incidents from happening both in our local and organization network. One really easy way to keep all your information secure is to encrypt absolutely everything, especially any sensitive information, keep all your firmware up to date and disable insecure and plaintext communication ports like TLS. Taking such precasutions may not stop the threat entirely, but taking such measures greatly reduces the risk of your data being compromised. 
 
