@@ -92,6 +92,8 @@ Now that traffic is coming into Wireshark, we will now initiate a connection bet
 
 We will navigate to Filezilla on the FTP client and under Fiel --> Site Manager, we will connect to the FTP server.  
 
+![image](https://github.com/user-attachments/assets/b05011a2-c7d6-4d8f-be10-c38db2ec4a1d)
+
 
 
 
