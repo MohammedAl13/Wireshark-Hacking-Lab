@@ -88,6 +88,10 @@ Once we reach the Wireshark home screen, we are presented with a few options. et
 ![image](https://github.com/user-attachments/assets/3da31c70-9d98-48b3-9b57-752210e02251)
 
 
+Now that traffic is coming into Wireshark, we will now initiate a connection between our FTP client and server. After a connection is established, the capture will be stopped and we will see if we can find any captured usernames and passwords.
+
+We will navigate to Filezilla on the FTP client and under Fiel --> Site Manager, we will connect to the FTP server.  
+
 
 
 
