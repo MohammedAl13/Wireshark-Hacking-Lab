@@ -94,6 +94,21 @@ We will navigate to Filezilla on the FTP client and under Fiel --> Site Manager,
 
 ![image](https://github.com/user-attachments/assets/b05011a2-c7d6-4d8f-be10-c38db2ec4a1d)
 
+After clicking connect, we can go to the FTP server and see that the connection was made successfully.
+
+IMAGE
+
+Now that the connection is made, we will stop the Wireshark capture in our Kali Linux VM. Since there is a lot of information, we will be filtering only for ftp data. If we scroll, we can find a packet stating the Username, password request, and the password in clear plaintext.
+
+IMAGE
+
+Now that we have successfully captured the Username and Password, we will now capture file contents downloaded over the network.
+
+To do so, make sure all VMs are running and go back into Wireshark and select eth1 and start the packet capture. Then head over to the FTP client and navigate to Filezilla. Like before, we will again connect to the FTP server. Lastly, we will download the 3 files seen in Filezilla by double clicking them.
+
+Once this is complete, we can now end the packet capture in Wireshark.
+
+
 
 
 
