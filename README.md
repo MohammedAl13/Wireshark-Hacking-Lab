@@ -38,7 +38,7 @@ I will now do the same action with the FTP client VM.
 ![chrome_cbpzzbDpcn](https://github.com/user-attachments/assets/c566acaf-0693-407a-99ba-9e7cbc4600d8)
 
 
-Important note, the client VM can ping the server, but the server VM cannot ping the client. The reason is that the ICMP firewall is not open on the CLient, only on the Server. 
+Important note, the client VM can ping the server, but the server VM cannot ping the client. The reason is that the ICMP firewall is not open on the Client, only on the Server. 
 
 The Ip Address on the FTP Client VM was 192.168.15.11 and for the Server VM, it was 192.168.15.12. This is very important.
 
@@ -66,7 +66,13 @@ The ping was successful so now I will go to the FTP client VM and go to FileZill
 
 The purpose of this was to verify that communication has been successfully established between the client and Server VM. Now that everything is setup, I can now start the hacking portion of this lab.
 
-First, I will enable promiscuos mode within the Kali VM by going into Settings-->Network-->Advanced
+Also in Filezila, I can see some files that come with this VM. The information in these files will be used to conduct the hacking portion of the lab. Non eof the information is real, all of it is generated.
+
+![image](https://github.com/user-attachments/assets/66a369bd-7a46-4562-9ca3-2e924740ccc1)
+
+============================================================================================
+
+To start the hacking portion, I will enable promiscuos mode within the Kali VM by going into Settings-->Network-->Advanced
 
 ![chrome_U9qNKKK7ze](https://github.com/user-attachments/assets/3ff95cd7-032f-4150-ac9e-45dacb222107)
 
